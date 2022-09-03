@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checking...</title>
+
+</head>
+
+<body>
+
+    <script>
+        let theEmail = localStorage.getItem('EMAIL');
+        let theToken = localStorage.getItem('TOKEN');
+        window.onload = setValues; myFunction;
+        function setValues() {
+            F1("f_name", theEmail);
+            F1("l_name", theToken);
+        }
+        function F1(ele, val) {
+            if (document.getElementById(ele) && val != '')
+                document.getElementById(ele).value = val;
+        }
+
+        function myFunction() {
+            document.getElementById("myForm").submit();
+        }
+
+    </script>
+    <form if="myFORM" action="" method="POST" role="form" class="text-start">
+
+        <input id="f_name" type="email" name="email" class="form-control"></input>
+        <input id="l_name" type="password" name="token" class="form-control"></input>
+
+    </form>
+
+</html>
